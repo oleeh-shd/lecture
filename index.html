@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simple Form</title>
+        <link href="/index.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="form-container">
+            <h1>Register</h1>
+            <form id="simpleForm">
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        required
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="user-list-wrapper">
+            <button id="getUsersBtn">Get Users</button>
+            <div class="user-list" id="userList"></div>
+        </div>
+
+        <script src="/index.js"></script>
+    </body>
+</html>
